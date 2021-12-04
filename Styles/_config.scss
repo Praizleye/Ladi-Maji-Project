@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$color-pr: rgb(252, 252, 252); 
+body{
+   font-family: "Poppins" , sans-serif; 
+   color: blueviolet;
+  min-width: 100vw;
+   overflow-x: hidden;
+
+}
+@mixin flexbox ($dir, $jc-c, $al-c){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc-c;
+    align-items: $al-c;
+}
+
+.circle-1{
+    height: 650px;
+    width: 650px;
+    color: blueviolet;
+   background-color: rgba(168, 62, 182, 0.3);
+   border-radius: 50%;
+   position: absolute;
+   left: 100%;
+   top: 5%;
+   transform: translate(-50%);
+   z-index: -5; 
+}
+.circle-2{
+    @extend .circle-1;
+    height: 750px;
+    width: 750px;
+    left: -20%;
+    top: 90%;
+    background-color: rgba(102, 102, 255, 0.2);
+}
+.circle-3{
+    @extend .circle-1;
+     height: 850px;
+    width: 850px;
+    left: 150%;
+    top: 170%;
+    background-color: rgba(168, 62, 182, 0.3);
+}
