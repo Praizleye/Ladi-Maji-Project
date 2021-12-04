@@ -14,12 +14,10 @@ function toggleMenu(e){
 if(burgerElement.classList.contains("fa-hamburger")){
 burgerElement.classList.remove("fa-hamburger");
 burgerElement.classList.add("fa-times");
-//console.log(burger.firstElementChild);
 }
 else{
    burgerElement.classList.remove("fa-times");
    burgerElement.classList.add("fa-hamburger");
-  // console.log(burger.firstElementChild);
 }
 
 }
