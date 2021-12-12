@@ -8,37 +8,35 @@
 body {
   font-family: "Poppins" , sans-serif;
   color: blueviolet;
-  min-width: 100vw;
+  min-width: 100%;
   overflow-x: hidden;
 }
 
-.circle-1, .circle-2, .circle-3 {
-  height: 650px;
-  width: 650px;
+div.circle-theory .circle-1, div.circle-theory .circle-2, div.circle-theory .circle-3 {
+  height: 100%;
+  width: 200%;
   color: blueviolet;
   background-color: rgba(168, 62, 182, 0.3);
   border-radius: 50%;
   position: absolute;
-  left: 100%;
-  top: 5%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  left: 30%;
+  top: 0%;
   z-index: -5;
 }
 
-.circle-2 {
-  height: 750px;
-  width: 750px;
-  left: -20%;
-  top: 90%;
+div.circle-theory .circle-2 {
+  height: 100%;
+  width: 200%;
+  left: -120%;
+  top: 110%;
   background-color: rgba(102, 102, 255, 0.2);
 }
 
-.circle-3 {
-  height: 850px;
-  width: 850px;
-  left: 150%;
-  top: 170%;
+div.circle-theory .circle-3 {
+  height: 100%;
+  width: 200%;
+  left: 30%;
+  top: 220%;
   background-color: rgba(168, 62, 182, 0.3);
 }
 
@@ -55,6 +53,172 @@ body {
   -webkit-transform: scale(1);
           transform: scale(1);
   pointer-events: all;
+  position: fixed;
+  z-index: 100;
+  width: 90%;
+  height: 80%;
+  left: 10%;
+}
+
+@media only screen and (max-width: 390px) {
+  header {
+    width: 100%;
+  }
+  header .Name {
+    font-size: 1.3rem !important;
+  }
+  header div.burger {
+    margin-right: .5rem;
+  }
+  nav {
+    padding-top: 3rem;
+  }
+  section.d-catch span.catchy-text {
+    font-size: 1.2rem !important;
+    top: 5%;
+  }
+  section.section-1 .Vision-Mission, section.section-3 .Vision-Mission {
+    width: 90% !important;
+  }
+  div.circle-theory .circle-1, div.circle-theory .circle-2, div.circle-theory .circle-3 {
+    height: 140%;
+    width: 240%;
+  }
+  div.circle-theory .circle-2 {
+    height: 140%;
+    width: 240%;
+    top: 130%;
+    left: -170%;
+  }
+  div.circle-theory .circle-3 {
+    height: 130%;
+    width: 230%;
+    top: 250%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  header {
+    height: 20vh !important;
+  }
+  nav {
+    height: 80vh !important;
+    font-size: 1.2rem !important;
+  }
+  section.d-catch span.catchy-text {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  header .Name {
+    font-size: 2.5rem !important;
+    letter-spacing: .01rem;
+  }
+  nav {
+    font-size: 2rem !important;
+  }
+  section.d-catch span.catchy-text {
+    font-size: 2rem !important;
+    top: 15%;
+  }
+  section.d-catch div.care {
+    font-size: 3rem !important;
+    top: 50% !important;
+  }
+  section.d-catch button {
+    width: 14rem !important;
+    height: 6rem !important;
+  }
+  section.d-catch button svg {
+    font-size: 2rem !important;
+  }
+  section.d-catch button .partner-text {
+    font-size: 2.5rem !important;
+  }
+  .Vision-Mission, .section-2, .historyPane {
+    width: 80% !important;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .Vision-Mission h4, .section-2 h4, .historyPane h4 {
+    font-size: 3rem !important;
+    padding: 1.2rem;
+    border-bottom: 2px solid blueviolet;
+  }
+  .Vision-Mission div, .section-2 div, .historyPane div {
+    padding: 1rem !important;
+  }
+  section.section-2 svg {
+    width: 450px !important;
+  }
+  section.section-2 .month {
+    font-size: 3.5rem !important;
+    top: -450px !important;
+    left: -55px !important;
+  }
+  section.section-2 .time {
+    top: -310px !important;
+    left: -85px !important;
+    font-size: 1.7rem !important;
+  }
+  section.section-2 .day {
+    top: -230px !important;
+    left: -25px !important;
+    font-size: 2rem !important;
+  }
+  section.section-2 .date {
+    position: absolute;
+    top: -170px !important;
+    left: -23px !important;
+    font-size: 3.5rem !important;
+  }
+  section.section-4 {
+    width: 80% !important;
+  }
+  section.section-4 h4 {
+    font-size: 3rem !important;
+    border-bottom: 2px solid blueviolet;
+  }
+  section.section-4 .testimony-head {
+    height: 50% !important;
+  }
+  section.section-4 .testimony-head img {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  section.section-4 .testimony-head span {
+    font-size: 2rem !important;
+    top: 40% !important;
+    left: 40% !important;
+    -webkit-transform: translate(-40% -40%) !important;
+            transform: translate(-40% -40%) !important;
+  }
+  section.section-4 div.testimony-text {
+    font-size: 1.5rem !important;
+    padding: 1rem;
+  }
+  div.circle-theory .circle-1, div.circle-theory .circle-2, div.circle-theory .circle-3 {
+    height: 100%;
+    width: 200%;
+  }
+  div.circle-theory .circle-2 {
+    height: 100%;
+    width: 200%;
+    top: 100%;
+    left: -150%;
+  }
+  div.circle-theory .circle-3 {
+    height: 100%;
+    width: 200%;
+    top: 180%;
+    left: 50%;
+  }
+  .nav-toggled {
+    width: 80%;
+    height: 80%;
+    left: 25%;
+  }
 }
 
 header {
@@ -67,9 +231,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -80,7 +244,7 @@ header .Name {
   color: #fcfcfc;
   font-weight: 700;
   line-height: 1.5;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   width: 80%;
   padding: 1rem;
   letter-spacing: 0.05rem;
@@ -90,6 +254,7 @@ header div.burger {
   color: white;
   cursor: pointer;
   position: relative;
+  margin-right: 1rem;
 }
 
 header div.burger .burger-open,
@@ -125,7 +290,7 @@ nav {
   height: 90vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#6666ff), to(#cc33ff));
   background: linear-gradient(to bottom, #6666ff 0%, #cc33ff 100%);
-  font-size: 2rem;
+  font-size: 1.5rem;
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -133,6 +298,7 @@ nav {
           transform-origin: top right;
   pointer-events: none;
   display: none;
+  padding-top: 3rem;
 }
 
 nav ul li {
@@ -151,43 +317,99 @@ nav ul li a :hover {
 
 section.d-catch {
   width: 100%;
-  height: 10vh;
+  margin-top: 10vh;
+  height: 70vh;
   position: relative;
 }
 
-section.d-catch div.care {
+section.d-catch .landingSection {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+section.d-catch .landingSection img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
-  left: 15%;
-  top: 50%;
-  color: #6666ff;
+  opacity: 0.8;
+}
+
+section.d-catch .landingSection img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+section.d-catch .landingSection .backgroundCover {
+  width: 100%;
+  height: 80%;
+  background-color: #302c35;
+  position: absolute;
+  opacity: 0.9;
+}
+
+section.d-catch .text-upon {
+  z-index: 100;
+  opacity: 1;
+  height: 80%;
+  width: 100%;
+  left: 50%;
+}
+
+section.d-catch .text-upon .catchy-text {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  color: white;
+  font-size: 1.5rem;
+}
+
+section.d-catch .text-upon div.care {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  color: white;
   line-height: 3rem;
-  font-size: 300;
-  width: 30%;
+  font-size: 2rem;
+  width: 100%;
   text-align: center;
 }
 
-section.d-catch button {
+section.d-catch .text-upon button {
   position: absolute;
-  right: 10%;
-  top: 50%;
-  width: 8rem;
+  left: 50%;
+  top: 70%;
+  width: 9rem;
   height: 4rem;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #6666ff;
   color: white;
+  outline: none;
   border: none;
-  font-size: large;
   cursor: pointer;
   line-height: 1.2;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-section.d-catch button .partner-text {
-  font-size: 1.2rem;
-}
-
-section.d-catch button :hover {
+section.d-catch .text-upon button:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+section.d-catch .text-upon button svg {
+  font-size: 1.5rem;
+}
+
+section.d-catch .text-upon button .partner-text {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
 }
 
 section.section-1, section.section-3 {
@@ -204,20 +426,7 @@ section.section-1, section.section-3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 4rem;
   width: 100%;
-}
-
-section.section-1 img, section.section-3 img {
-  width: 100%;
-  height: 370px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-section.section-1 img:hover, section.section-3 img:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
 }
 
 section.section-1 .Vision-Mission, section.section-3 .Vision-Mission {
@@ -226,7 +435,7 @@ section.section-1 .Vision-Mission, section.section-3 .Vision-Mission {
   -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
   margin-top: 2rem;
-  width: 80%;
+  width: 90%;
 }
 
 section.section-1 .Vision-Mission h4, section.section-3 .Vision-Mission h4 {
@@ -256,8 +465,8 @@ section.section-2 {
           align-items: center;
   border: 3px solid #ad72e4;
   border-radius: 10px;
-  width: 80%;
-  margin: 4rem auto;
+  width: 90%;
+  margin: 6rem auto 0 auto;
   -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
@@ -322,8 +531,8 @@ section.section-3 .historyPane {
   border-radius: 10px;
   -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
-  margin-top: 2rem;
-  width: 80%;
+  margin-top: 6rem;
+  width: 90%;
 }
 
 section.section-3 .historyPane h4 {
@@ -336,8 +545,8 @@ section.section-3 .historyPane h4 {
 section.section-4 {
   border: 3px solid #ad72e4;
   border-radius: 10px;
-  width: 80%;
-  margin: 4rem auto;
+  width: 90%;
+  margin: 6rem auto;
   -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
@@ -345,7 +554,6 @@ section.section-4 {
 
 section.section-4 h4 {
   border-bottom: 1px solid blueviolet;
-  margin-top: 1rem;
   text-align: center;
   font-size: larger;
 }
@@ -402,24 +610,13 @@ footer {
 }
 
 footer address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 1.5rem 1.8rem;
+  text-decoration: none;
 }
 
 footer address a {
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
   color: #fefeff;
 }
 
@@ -427,8 +624,88 @@ footer address a:hover {
   border-bottom: 1px solid white;
 }
 
+footer address .contact-info .h4 {
+  line-height: 1.5;
+  letter-spacing: .1rem;
+}
+
+footer address .contact-info div {
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+  margin-top: .5rem;
+}
+
+footer address .location {
+  margin-top: 1.2rem;
+}
+
+footer address .location .h4 {
+  line-height: 1.5;
+  letter-spacing: .1rem;
+}
+
+footer address .location div {
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+  margin-top: .5rem;
+}
+
+footer .short-message {
+  margin: 1.5rem 1.8rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .short-message input {
+  height: 3rem;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+footer .short-message button {
+  outline: none;
+  border: none;
+  background: none;
+  color: #d5d5df;
+  font-size: 2rem;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 1.8rem auto 0.5rem auto;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .social-icons svg:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 footer .copyright {
   background-color: white;
   color: blueviolet;
+  text-align: center;
 }
 /*# sourceMappingURL=Landingpage.css.map */

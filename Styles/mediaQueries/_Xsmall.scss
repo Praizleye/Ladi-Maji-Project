@@ -1,0 +1,63 @@
+@media only screen and (max-width: 390px) {
+    
+   header{
+       width: 100%;
+       .Name{
+           font-size: 1.3rem !important;
+       }
+       div.burger{
+        margin-right: .5rem;
+       }
+   }
+   nav{
+       padding-top: 3rem;
+   }
+  section.d-catch{
+      span.catchy-text{
+          font-size: 1.2rem !important;
+          top: 5%;
+      }
+     
+  }
+
+  section.section-1{
+      .Vision-Mission{
+          width: 90% !important;
+      }
+  }
+
+  div.circle-theory{
+    .circle-1{
+        height: 140%;
+        width: 240%;
+    }
+    .circle-2{
+        height: 140%;
+        width: 240%;
+        top: 130%;
+        left: -170%;
+    }
+    .circle-3{
+        height: 130%;
+        width: 230%;
+        top: 250%;
+    }
+    }
+
+}
+@media only screen and (max-width: 350px) {
+    
+    header{
+        height: 20vh !important;
+    }
+    nav{
+        height: 80vh !important;
+        font-size: 1.2rem !important;
+    }
+   section.d-catch{
+       span.catchy-text{
+           display: none;
+       }
+   }
+  
+ }

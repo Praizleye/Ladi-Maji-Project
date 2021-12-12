@@ -1,0 +1,19 @@
+{
+  "name": "ladimajiproject",
+  "version": "1.0.0",
+  "description": "Ladi Maji Foundation Website aimed to go global and pro",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praizleye/Ladi-Maji-Project.git"
+  },
+  "author": "Praiz Leye alias Play Junkie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Praizleye/Ladi-Maji-Project/issues"
+  },
+  "homepage": "https://github.com/Praizleye/Ladi-Maji-Project#readme"
+}

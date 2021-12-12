@@ -1,0 +1,124 @@
+@media only screen and (min-width: 700px) {
+    
+    header{
+   .Name{
+       font-size: 2.5rem !important;
+       letter-spacing: .01rem;
+   }
+    }
+ nav{
+       font-size: 2rem !important;
+   }
+   section.d-catch{
+    span.catchy-text{
+        font-size: 2rem !important;
+        top: 15%;
+    }
+    div.care{
+        font-size: 3rem !important;
+        top: 50% !important;
+    }
+   button{
+       width: 14rem !important;
+       height: 6rem !important;
+       svg{
+           font-size: 2rem !important;
+       }
+       .partner-text{
+           font-size: 2.5rem !important;
+       }
+   }
+}
+
+   .Vision-Mission,.section-2,.historyPane{
+       width: 80% !important;
+       font-size: 1.5rem;
+       line-height: 1.5;
+       h4{
+           font-size: 3rem !important;
+           padding: 1.2rem;
+           border-bottom: 2px solid blueviolet;
+       }
+       div{
+           padding: 1rem !important;
+       }
+   }
+   section.section-2{
+       svg{
+           width: 450px !important;
+       }
+      .month{
+          font-size: 3.5rem !important;
+         top: -450px !important;
+         left: -55px !important;
+      }
+      .time{
+        top:-310px !important;
+        left: -85px !important;
+        font-size: 1.7rem !important;
+      }
+      .day{
+          top:-230px !important;
+          left: -25px !important;
+          font-size: 2rem !important;
+    
+      }
+      .date{
+         position: absolute;
+          top:-170px !important;
+          left:-23px !important;
+          font-size: 3.5rem !important;
+    }
+   }
+
+section.section-4{
+    width: 80% !important;
+   h4{
+       font-size: 3rem !important;
+       border-bottom: 2px solid blueviolet;
+       //padding-top: -2rem !important;
+   }
+   .testimony-head{
+       height: 50% !important;
+       img{
+           height: 200px !important;
+           width: 200px !important;
+       }
+       span{
+           font-size: 2rem !important;
+           top: 40% !important;
+           left: 40% !important;
+           transform: translate(-40% -40%) !important;
+       }
+   }
+   div.testimony-text{
+       font-size: 1.5rem !important;
+       padding: 1rem;
+   }
+}
+
+div.circle-theory{
+    .circle-1{
+        height: 100%;
+        width: 200%;
+    }
+    .circle-2{
+        height: 100%;
+        width: 200%;
+        top: 100%;
+        left: -150%;
+    }
+    .circle-3{
+        height: 100%;
+        width: 200%;
+        top: 180%;
+        left: 50%;
+    }
+    }
+
+   .nav-toggled{
+    width: 80%;
+    height: 80%;
+    left: 25%;
+}
+}
