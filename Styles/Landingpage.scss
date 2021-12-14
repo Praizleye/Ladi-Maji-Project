@@ -2,19 +2,23 @@
 @import "./scriptclass";
 @import "./mediaQueries/Xsmall";
 @import "./mediaQueries/Medium";
+@import "./mediaQueries/XLandL";
+
 header{
     width: 100%;
     height: 10vh;
     @include flexbox(row, space-between, center); 
     background-color:#cc33ff;
+  
 .Name{
 color: $color-pr;
-font-weight: 700;
+//font-weight: 700;
 line-height: 1.5;
 font-size: 1.5rem;
 width: 80%;
 padding: 1rem;
-letter-spacing: 0.05rem;
+letter-spacing: 0.05rem; 
+ font-weight: lighter;
 }
 
 div.burger{
@@ -44,8 +48,7 @@ nav{
     height: 90vh;
   background: linear-gradient(to bottom, #6666ff 0%, #cc33ff 100%);
     font-size: 1.5rem;
-    opacity: 0;
-    transform: scale(0);
+    //transform: scale(0);
     transform-origin: top right;
     pointer-events: none;
     display: none;
@@ -386,7 +389,3 @@ div{
       text-align: center;
    }
 }
-
-// main{
-   
-// }

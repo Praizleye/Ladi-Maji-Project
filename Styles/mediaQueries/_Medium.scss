@@ -1,4 +1,4 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
     
     header{
    .Name{
@@ -35,7 +35,7 @@
        font-size: 1.5rem;
        line-height: 1.5;
        h4{
-           font-size: 3rem !important;
+           font-size: 2rem !important;
            padding: 1.2rem;
            border-bottom: 2px solid blueviolet;
        }
@@ -74,7 +74,7 @@
 section.section-4{
     width: 80% !important;
    h4{
-       font-size: 3rem !important;
+       font-size: 2rem !important;
        border-bottom: 2px solid blueviolet;
        //padding-top: -2rem !important;
    }
@@ -87,7 +87,7 @@ section.section-4{
        span{
            font-size: 2rem !important;
            top: 40% !important;
-           left: 40% !important;
+           left: 50% !important;
            transform: translate(-40% -40%) !important;
        }
    }
@@ -97,28 +97,92 @@ section.section-4{
    }
 }
 
+footer{
+    address{
+       margin: 2.5rem 3rem !important;
+ .contact-info{
+     margin-top: 2rem;
+     font-weight: lighter;
+ .h4{
+     font-size: 1.8rem !important;
+     line-height: 2;
+     letter-spacing: .3rem;
+ }
+ div{
+     font-size: 1.3rem !important;
+     letter-spacing: .3rem;
+     margin-top: 1.2rem;
+ }
+ }
+ .location{
+     margin-top: 2rem;
+     font-weight: lighter;
+     .h4{
+     font-size: 1.8rem !important;
+     line-height: 1.5;
+     letter-spacing: .1rem;
+     }
+     div{
+       font-size: 1.3rem !important;  
+       letter-spacing: .1rem;
+       margin-top: .5rem;
+     }
+ }
+ 
+     }
+     .short-message{
+         margin: 2.5rem 3rem 1rem !important; 
+          width: 100%;
+          display: flex;
+         input{
+         height: 4rem !important;
+         width: 80% !important;
+         padding: 1rem !important;
+         font-size: 2rem !important;
+         }
+     }
+     .social-icons{
+         font-size: 2.5rem !important;
+         margin-top: 3rem !important;
+     }
+   
+    .copyright{
+       font-size: 1.5rem !important;
+    }
+ }
+ 
 div.circle-theory{
     .circle-1{
-        height: 100%;
+        height: 120%;
         width: 200%;
     }
     .circle-2{
-        height: 100%;
+        height: 120%;
         width: 200%;
         top: 100%;
         left: -150%;
     }
     .circle-3{
-        height: 100%;
+        height: 120%;
         width: 200%;
-        top: 180%;
+        top: 200%;
         left: 50%;
     }
     }
+
 
    .nav-toggled{
     width: 80%;
     height: 80%;
     left: 25%;
+}
+}
+
+@media only screen and (min-width: 768px) {
+   div.testimony-head span.testifiers-name{
+    font-size: 2.2rem !important;
+    left: 40% !important;
+    top: 40%;
+    transform: translateY(-40%);
 }
 }

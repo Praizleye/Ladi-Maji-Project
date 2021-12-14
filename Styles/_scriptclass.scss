@@ -6,7 +6,6 @@
 .nav-toggled{
     display: flex;
     opacity: 1;
-    transform: scale(1);
     pointer-events: all;
     position: fixed;
     z-index: 100;
@@ -15,4 +14,8 @@
     left: 10%;
 }
 
+nav ul li.active{
+    border: 1px solid blue !important;
+    background: blue;
+}
 

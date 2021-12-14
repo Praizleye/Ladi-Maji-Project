@@ -1,0 +1,40 @@
+@media only screen and (min-width: 992px) {
+    
+    header{
+    display: block !important; 
+    height: 80px !important ;
+       // display: flex !important;
+      // justify-content: space-between !important;
+        .Name{
+            width: 60% !important;
+            height: 80px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+  div.burger{
+      display: none;
+  }
+}
+
+    nav{
+    display: block !important;
+    width: 40% !important;
+    height: 10vh !important;
+    font-size: small !important;
+    position: absolute;
+    left: 58%;
+    top: -1rem;
+    background: none !important;
+    pointer-events: all !important;
+    ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+//    li a{
+//        cursor: pointer !important;
+//    }
+    }
+    }
+
+}
