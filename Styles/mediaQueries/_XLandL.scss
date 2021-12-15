@@ -1,40 +1,31 @@
 @media only screen and (min-width: 992px) {
-    
-    header{
-    display: block !important; 
-    height: 80px !important ;
-       // display: flex !important;
-      // justify-content: space-between !important;
-        .Name{
-            width: 60% !important;
-            height: 80px;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-        }
-  div.burger{
-      display: none;
-  }
-}
 
+header{
     nav{
-    display: block !important;
-    width: 40% !important;
+   justify-content: center !important;
+   
+ .brand{
+    width: 60% !important;
+ }
+ div.burger{
+     display: none;
+ }
+ ul.nav-items{
+
+    top: 0vh !important;
     height: 10vh !important;
-    font-size: small !important;
-    position: absolute;
-    left: 58%;
-    top: -1rem;
-    background: none !important;
-    pointer-events: all !important;
-    ul{
+    width: 40% !important;
+   background: none;
+    color: white;
    display: flex;
-   justify-content: space-between;
+   flex-direction: row;
    align-items: center;
-//    li a{
-//        cursor: pointer !important;
-//    }
+   justify-content: space-around;
+   transform: translateX(0%) !important;
+   font-size: small;
+
     }
-    }
+}
+}
 
 }

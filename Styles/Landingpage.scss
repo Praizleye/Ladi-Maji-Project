@@ -2,70 +2,49 @@
 @import "./scriptclass";
 @import "./mediaQueries/Xsmall";
 @import "./mediaQueries/Medium";
-@import "./mediaQueries/XLandL";
+ @import "./mediaQueries/XLandL";
 
-header{
-    width: 100%;
-    height: 10vh;
-    @include flexbox(row, space-between, center); 
-    background-color:#cc33ff;
-  
-.Name{
-color: $color-pr;
-//font-weight: 700;
-line-height: 1.5;
-font-size: 1.5rem;
-width: 80%;
-padding: 1rem;
-letter-spacing: 0.05rem; 
- font-weight: lighter;
-}
 
-div.burger{
-    color: white;
-    cursor: pointer;
-    position: relative;
-    margin-right: 1rem;
-    .burger-open,
-    .burger-close{ 
-       position: absolute;
-         height: 1.3rem;
-         width: 1.3rem;
-         top: -12px;
-         right: 1px;
-       color: white;
-       pointer-events: all;
-       :hover{
-       transform: scale(0.98);
-     }
-    
-    }
-
-}
-}
 nav{
-    @include flexbox(column, space-around, center);
-    height: 90vh;
-  background: linear-gradient(to bottom, #6666ff 0%, #cc33ff 100%);
-    font-size: 1.5rem;
-    //transform: scale(0);
-    transform-origin: top right;
-    pointer-events: none;
-    display: none;
-    padding-top: 3rem;
-    ul li{
-        list-style: none;
-     padding-bottom: 50%;
-        a{
-            text-decoration: none;
-           color: rgb(254, 254, 255);
-           & :hover{
-               border-bottom: 2px solid white;
-            
+    @include flexbox(row, space-around,center);
+    min-height: 10vh;
+    width: 100%;
+    background-color: #cc33ff;
+    color: white;
+   
+    div.burger{
+        cursor:pointer;
+    }
+    ul.nav-items{
+        position: absolute; 
+        right: 0;
+        top: 10vh;
+        height: 80vh;
+        width: 90%;
+        background: linear-gradient(to bottom, #6666ff 0%, #cc33ff 100%);
+        z-index: 100;
+        color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: transform 0.5s ease;
+       li{
+           list-style: none;
+           color: white;
+           a{
+               text-decoration: none;
+               color: white;
+         &:hover{
+             border-bottom: 1px solid rgb(167, 161, 161);
+         }
            }
-        }
+       }
     }
 }
+
+
 
 section.d-catch{
 width: 100%;

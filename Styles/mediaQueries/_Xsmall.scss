@@ -1,17 +1,6 @@
 @media only screen and (max-width: 390px) {
     
-   header{
-       width: 100%;
-       .Name{
-           font-size: 1.3rem !important;
-       }
-       div.burger{
-        margin-right: .5rem;
-       }
-   }
-   nav{
-       padding-top: 3rem;
-   }
+  
   section.d-catch{
       span.catchy-text{
           font-size: 1.2rem !important;
@@ -47,13 +36,6 @@
 }
 @media only screen and (max-width: 350px) {
     
-    header{
-        height: 20vh !important;
-    }
-    nav{
-        height: 80vh !important;
-        font-size: 1.2rem !important;
-    }
    section.d-catch{
        span.catchy-text{
            display: none;

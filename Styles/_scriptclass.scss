@@ -1,21 +1,9 @@
-.burger-close{
-    opacity: 0;
-    pointer-events: none;
-}
+// .burger-close{
+//     opacity: 0;
+//     pointer-events: none;
+// }
 
 .nav-toggled{
-    display: flex;
-    opacity: 1;
-    pointer-events: all;
-    position: fixed;
-    z-index: 100;
-    width: 90%;
-    height: 80%;
-    left: 10%;
-}
+   transform: translateX(0%) !important;
 
-nav ul li.active{
-    border: 1px solid blue !important;
-    background: blue;
 }
-
