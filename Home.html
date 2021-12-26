@@ -27,13 +27,13 @@
         </div>
        
             <ul class="nav-items">
-                <li class="nav-item active"> <a class="nav-link" href="#"><span><i class="fas fa-home"></i> Home</span></a>
+                <li class="nav-item active" id="home"> <a class="nav-link" href="#"><span><i class="fas fa-home"></i> Home</span></a>
                 </li>
-                <li class="nav-item"> <a class="nav-link" href="./Aboutus.html"><span><i class="fas fa-fingerprint"></i>
+                <li class="nav-item" id="about"> <a class="nav-link" href="./Aboutus.html"><span><i class="fas fa-fingerprint"></i>
                             About us</span></a></li>
-                <li class="nav-item"> <a class="nav-link" href="./Contactus.html"><span><i class="fas fa-headset"></i>
+                <li class="nav-item" id="contact"> <a class="nav-link" href="./Contactus.html"><span><i class="fas fa-headset"></i>
                             Contact us</span></a></li>
-                <li class="nav-item"> <a class="nav-link" href="./Partner.html"><span><i class="fas fa-handshake"></i>
+                <li class="nav-item" id="partner"> <a class="nav-link" href="./Partner.html"><span><i class="fas fa-handshake"></i>
                             Partner</span></a></li>
             </ul>
         </nav>
@@ -65,7 +65,10 @@
         </section>
         <section class="section-2">
             <h4 class="heading-2">Upcoming Events</h4>
+            <div class="prev"></div>
+              <div class="next"></div>
             <div class="eventBody">
+
                 <svg class="Calender" viewBox="0 0 38 40.5">
                     <defs>
                         <style>
@@ -103,6 +106,7 @@
                         </g>
                     </g>
                 </svg>
+               
             </div>
             <div class="eventContent">
                 <div class="month">DEC</div>
@@ -112,7 +116,7 @@
             </div>
             <div class="someContent">End of the year empowerment and provision scheme aimed at helping the widows during
                 festive period and catering for orphans</div>
-
+              
         </section>
 
         <section class="section-3">
@@ -127,10 +131,12 @@
         <section class="section-4">
             <div class="testimonies">
                 <h4>Testimonies</h4>
+                <div class="prev2"></div>
+                <div class="next2"></div>
                 <div class="testimoniesContainer">
                     <div class="testimony-1">
                         <div class="testimony-head">
-                            <img src="./Assets/testimonyImage1.jpg" alt="image of the widow testifying" />
+                            <img class="tImg" src="./Assets/testimonyImage1.jpg" alt="image of the widow testifying" />
                             <span class="testifiers-name">Mrs Kofree Adang </span>
                         </div>
                         <div class="testimony-text">
@@ -150,32 +156,50 @@
     </main>
 
     <footer>
-        <address>
+        
             <div class="contact-info">
                 <div class="h4">Contact info</div>
+                <div class="contact-info-content">
                 <div class="tel-1"><a href="tel:+234 809 8004 878"><i class="fas fa-phone-alt"></i> +234 809 8004
                         878</a></div>
                 <div class="tel-2"><a href="tel:+234 909 8104 878"><i class="fas fa-phone-alt"></i> +234 909 8104
                         878</a></div>
                 <div class="mail-to"><a href="mailto:praiseleye.pl@gmail.com"><i class="fab fa-mailchimp"></i>
                         ladimaji@org</a></div>
-            </div>
+                        
+              </div>
+        </div>
             <div class="location">
                 <div class="h4">Our Location</div>
-                <div><i class="fas fa-map-marker-alt"></i> P.O box 1423 off refinery junction agwan boro kaduna south
-                    kaduna state.</div>
+                <div class="location-content"><a href="./Contact.html"><i class="fas fa-map-marker-alt"></i> P.O box 1423 off refinery junction agwan boro kaduna south
+                    kaduna state.</a>
+                    <div><span><i class="far fa-clock"></i> Mon 9am - 6pm</span></div>
             </div>
-        </address>
+        </div>
+
         <div class="short-message">
+            <div class="h4">Short Mesasge</div>
             <input type="text" placeholder="Give us a feedback" />
             <button><i class="fas fa-paper-plane"></i></button>
         </div>
+        <div class="Dev">
+            <div class="h4">Other Links</div>
+            <div class="dev-content">
+            <div> Admin Login</div>
+            <div>Patnerships</div>
+             <div>Developers info</div>
+             <div style="color:red">Report Bug!</div>
+        </div>
+    </div>
         <div class="social-icons">
+            <div class="h4">Follow us</div>
+            <div class="socialIcon">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-whatsapp"></i>
             <i class="fab fa-youtube"></i>
+        </div>
         </div>
         <div class="copyright">© Copyright 2021 LadiMaji Foundation</div>
     </footer>

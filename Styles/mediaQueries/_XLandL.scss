@@ -28,4 +28,173 @@ header{
 }
 }
 
+section.d-catch{
+    
+    .landingSection{
+
+    img{
+        height: 100% !important;
+       &:hover{
+           transform: scale(1.06 !important);
+       }
+     }
+    .backgroundCover{
+      height: 100% !important;
+    }
+    }
+    
+    .text-upon{
+        .catchy-text{
+              width: 40% !important;
+            left:20% !important;
+            top: 40% !important;
+            transform: translate(-20%, -40%) !important;
+        }
+    div.care{
+        left: 90% !important;
+        top: 40% !important;
+        width: 40% !important;
+        transform: translate(-90%, -40%) !important;
+     }
+     button{
+         width: 14rem !important;
+         height: 6rem !important;
+       
+    }
+    }
+    }
+   
+main{
+    margin-top: 10rem;
 }
+
+footer {
+    div.contact-info,
+    div.location{
+      margin: 0  2.5rem !important;
+      padding-top: 1.5rem;
+    
+      .h4{
+        font-size: 1.4rem;
+       }
+       .contact-info-content,
+       .location-content{
+           font-size: 1.7rem;
+         a{
+           text-decoration: none;
+           color: white;
+         }
+       }
+    }
+    div.short-message {
+        margin: 0  2.5rem !important;
+     .h4{
+        font-size: 1.4rem;
+     }
+    }
+    
+     div.Dev{
+        margin: 0  2.5rem !important;
+         .h4{
+            font-size: 1.4rem;
+         
+         }
+         .dev-content{
+            margin-top: .8rem;
+            font-size: 1.7rem;
+         }
+     }
+  
+    .social-icons {
+        margin: 0  2.5rem !important;
+      .h4{
+        font-size: 1.4rem;
+      }
+      div.socialIcon{
+      svg {
+         font-size: 2rem !important;
+         margin-top: .8rem;
+      }
+  }
+    }
+  
+    .copyright {
+    font-size: 1.4rem;
+    }
+  }
+
+}
+@media only screen and  (orientation: landscape) 
+// and (min-height: 700px)
+and (min-width: 550px) {
+// body{
+//   display: none;
+// }
+  section.d-catch{
+    
+    .landingSection{
+
+    img{
+        height: 100% !important;
+       &:hover{
+           transform: scale(1.06 !important);
+       }
+     }
+    .backgroundCover{
+      height: 100% !important;
+    }
+    }
+    
+    .text-upon{
+        .catchy-text{
+              width: 40% !important;
+            left:20% !important;
+            top: 40% !important;
+            transform: translate(-20%, -40%) !important;
+            font-size: 1.2rem;
+        }
+    div.care{
+        left: 90% !important;
+        top: 40% !important;
+        width: 40% !important;
+        transform: translate(-90%, -40%) !important;
+     }
+     button{
+         width: 12rem !important;
+         height: 4rem !important;
+         top: 85% !important;
+         svg {
+          font-size: 1.3rem !important;
+        }
+        .partner-text {
+          font-size: 1.3rem !important;
+        }
+    }
+    }
+    }
+   main{
+     margin-top: 7rem !important;
+   }
+
+   div.circle-theory{
+    .circle-1{
+        height: 850px !important;
+        width: 850px;
+        left: 60%
+    }
+    .circle-2{
+      height: 1050px !important;
+        width: 1050px;
+        left: -90%;
+        top: 170%;
+    }
+    .circle-3{
+        height: 1050px !important;
+        width: 1050px;
+        top: 450% !important;
+        left: 60%;
+    }
+    }
+
+}
+
