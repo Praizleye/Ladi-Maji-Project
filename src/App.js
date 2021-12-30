@@ -209,3 +209,37 @@ function prevBtn1Clicked(){
      }   
      addTestimony();
   }
+
+  //the scroll trigger timelines
+var tl3 =gsap.timeline({
+   scrollTrigger:{
+       trigger: ".Vision-Mission",
+       start: "top 100%",
+       end: "bottom 20%",
+       scrub: 1,
+       markers: true,   
+       duration: 2,
+      // snap: true
+   }
+});
+tl3.from("#vision-text", {opacity:0.2});
+tl3.from("section.section-1", {border: 0, scale: 1.5},"-=1");
+tl3.to(".circle-1", {height:1000, width:1900}, "-=5");
+tl3.from(".circle-2", {height:100, width:100}, "+=.5");
+
+
+var tl4 = gsap.timeline({
+   scrollTrigger:{
+       trigger: "h4.heading-2",
+       start: "top 40%",
+       end: "40%",
+       scrub: 1,
+      // markers: true,
+      // snap: true
+   }
+});
+
+// tl4.from(".heading-2", {x: 800, opacity:0});
+// tl4.from(".circle-2", {height:500, width:500});
+tl4.to("div.prev", {opacity:0, ease: Back.easeOut.config(2),opacity:0 });
+tl4.to("div.next", {opacity:0, ease: Back.easeOut.config(2),opacity:0 },"-=.2");
