@@ -59,6 +59,7 @@ tl.to("span.catchy-text", {
 delay: 5
 });
 
+//This timeline affects the way the nav items are animated
 function navtimeline(){
 const tl1 = gsap.timeline({defaults:{duration: 2, x:25}});
 tl1.from("ul.nav-items li#home", {opacity: 0}, "-=1");
@@ -73,6 +74,7 @@ tl2.from("div.backgroundCover", {x:100, delay:1, ease:Power2.easeOut},"-=.5")
 tl2.from(".circle-1", {y:-100, delay: 1,}, "-=.5");
 tl2.from("div.care", {scale : 2}, "-=1");
 tl2.from(".Partner-Us", {opacity: 0, x: -10},"-=1");
+tl2.to("img.brand-logo", {opacity:1})
 
 
 
@@ -99,7 +101,7 @@ const upcomingEvents = [
 month: "Mar",
 time: `1:00 p.m WAT`,
 day: "Fri",
-date: "2",
+date: "02",
 text: "Herro i am number 3, sit amet consectetur adipisicing elit. Eligendi rem explicabo ut minima. Modi, hic eveniet doloremque architecto officia sit nulla perspiciatis, quas id maiores sunt facere  eligendi esse iusto"
 }
 ]; 
@@ -214,32 +216,78 @@ function prevBtn1Clicked(){
 var tl3 =gsap.timeline({
    scrollTrigger:{
        trigger: ".Vision-Mission",
-       start: "top 100%",
-       end: "bottom 20%",
-       scrub: 1,
-       markers: true,   
+       start: "top 70%",
+       end: "bottom 90%",
+       scrub: 1,  
        duration: 2,
-      // snap: true
+       snap: true,
+     
    }
 });
 tl3.from("#vision-text", {opacity:0.2});
 tl3.from("section.section-1", {border: 0, scale: 1.5},"-=1");
 tl3.to(".circle-1", {height:1000, width:1900}, "-=5");
-tl3.from(".circle-2", {height:100, width:100}, "+=.5");
+tl3.from(".circle-2", {height:100, width:100, duration: 3, delay: 1}, "+=1.5");
 
 
 var tl4 = gsap.timeline({
    scrollTrigger:{
        trigger: "h4.heading-2",
        start: "top 40%",
-       end: "40%",
+       end: "bottom 60%",
        scrub: 1,
-      // markers: true,
-      // snap: true
+      // pin: true,
+      snap: true
    }
 });
-
-// tl4.from(".heading-2", {x: 800, opacity:0});
 // tl4.from(".circle-2", {height:500, width:500});
-tl4.to("div.prev", {opacity:0, ease: Back.easeOut.config(2),opacity:0 });
-tl4.to("div.next", {opacity:0, ease: Back.easeOut.config(2),opacity:0 },"-=.2");
+tl4.to("div.prev", {opacity:0, ease: Back.easeOut.config(2)});
+tl4.to("div.next", {opacity:0, ease: Back.easeOut.config (2)},"-=.2");
+tl4.from("#containingBox", {scaleY:0, rotateY: 20});
+tl4.from("div.month", {opacity: 0, y:-30, scale: 2, ease: "elastic.out(1, 0.3)"});
+tl4.from("#rectBox", {opacity:0,  scale: 1.5,}); 
+tl4.from("div.time", {opacity:0, x:-30, scale:2});
+tl4.from("div.day", {opacity:0, x:30, scale:2});
+tl4.from("div.date", {opacity:0, x:-30, scale:2});
+
+var tl5 =gsap.timeline({
+   scrollTrigger:{
+       trigger: "section.section-3",
+       start: "top 50%",
+       end: "bottom 60%",
+       scrub: 1,
+       duration: 2,
+       snap: true,
+     //  pin: true
+   }
+});
+tl5.from("#historyText", {opacity:0.2});
+tl5.from("section.section-3", {border: 0, scale: 1.5});
+tl5.from(".circle-3", {height:100, width:100, x:1000, duration: 3, delay: 1}, "+=2.5");
+
+
+var tl6 = gsap.timeline({
+   scrollTrigger:{
+       trigger: "div.testimonies",
+       start: "top 40%",
+       end: "bottom 80%",
+       scrub: 1,
+       //pin: true,
+      snap: true
+   }
+});
+tl6.to("div.prev2", {opacity:0, ease: Back.easeOut.config(2)});
+tl6.to("div.next2", {opacity:0, ease: Back.easeOut.config (2)},"-=.2");
+tl6.from("#testfiersImage", {scaleY:0, rotateY: 20});
+tl6.from("#testfiersName", {opacity: 0, y:-30, scale: 2, ease: "elastic.out(1, 0.3)"});
+tl6.from("#testfiersText", {opacity:0,  scale: 1.5,}); 
+
+
+var tlfooter = gsap.timeline({defaults:{repeat:-1, yoyo: true, repeatDelay: 1, opacity:0.95}});
+
+tlfooter.to("#phoneNum1",{rotateX: 20});
+tlfooter.to("#phoneNum2",{rotateX: 20});
+tlfooter.to("#lmfMail",{rotateX: 20});
+tlfooter.to("#locationAddress",{rotateX: 10});
+tlfooter.to("#timeOpen",{rotateX: 20});
+tlfooter.to("#submitFeedback",{rotateX: 40});

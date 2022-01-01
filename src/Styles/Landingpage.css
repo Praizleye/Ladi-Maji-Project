@@ -74,6 +74,7 @@ section.section-4 div.prev2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 100;
 }
 
 section.section-2 div.prev svg, section.section-2 div.prev2 svg,
@@ -107,6 +108,7 @@ section.section-4 div.next2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 100;
 }
 
 section.section-2 div.next svg, section.section-2 div.next2 svg,
@@ -159,9 +161,14 @@ section.section-4 div.next2 svg {
     font-size: 2rem !important;
     top: 15%;
   }
+  section.d-catch .brand-logo {
+    height: 200px !important;
+    width: 200px !important;
+    top: 20% !important;
+  }
   section.d-catch div.care {
     font-size: 3rem !important;
-    top: 50% !important;
+    top: 60% !important;
   }
   section.d-catch button {
     width: 14rem !important;
@@ -201,13 +208,13 @@ section.section-4 div.next2 svg {
   }
   section.section-2 .day {
     top: -230px !important;
-    left: -25px !important;
+    left: -30px !important;
     font-size: 2rem !important;
   }
   section.section-2 .date {
     position: absolute;
     top: -170px !important;
-    left: -23px !important;
+    left: -33px !important;
     font-size: 3.5rem !important;
   }
   section.section-4 {
@@ -412,6 +419,15 @@ section.section-4 div.next2 svg {
     -webkit-transform: translate(-90%, -40%) !important;
             transform: translate(-90%, -40%) !important;
   }
+  section.d-catch .text-upon .brand-logo {
+    left: 20% !important;
+    top: 40% !important;
+    width: 40% !important;
+    height: 200px !important;
+    width: 200px !important;
+    -webkit-transform: translate(-20%, -40%) !important;
+            transform: translate(-20%, -40%) !important;
+  }
   section.d-catch .text-upon button {
     width: 12rem !important;
     height: 4rem !important;
@@ -566,6 +582,18 @@ section.d-catch .text-upon .catchy-text {
   font-size: 1.5rem;
 }
 
+section.d-catch .text-upon img.brand-logo {
+  position: absolute;
+  z-index: 1;
+  height: large;
+  width: large;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  opacity: 0;
+}
+
 section.d-catch .text-upon div.care {
   position: absolute;
   left: 50%;
@@ -688,14 +716,12 @@ section.section-2 .eventContent .month {
   position: absolute;
   top: -230px;
   left: -35px;
-  color: antiquewhite;
 }
 
 section.section-2 .eventContent .time {
   position: absolute;
   top: -160px;
-  left: -50px;
-  color: antiquewhite;
+  left: -52px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -711,7 +737,7 @@ section.section-2 .eventContent .day {
 section.section-2 .eventContent .date {
   position: absolute;
   top: -100px;
-  left: -25px;
+  left: -33px;
   font-size: 3.5rem;
 }
 
@@ -736,6 +762,19 @@ section.section-3 .historyPane h4 {
 }
 
 section.section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 3px solid #ad72e4;
   border-radius: 10px;
   width: 90%;
@@ -746,9 +785,11 @@ section.section-4 {
 }
 
 section.section-4 h4 {
-  border-bottom: 1px solid blueviolet;
   text-align: center;
+  line-height: 2rem;
   font-size: larger;
+  border-bottom: 1px solid blueviolet;
+  width: 100%;
 }
 
 section.section-4 div.testimoniesContainer {
@@ -884,6 +925,7 @@ footer div.Dev .h4 {
 
 footer div.Dev .dev-content {
   margin-top: .8rem;
+  cursor: pointer;
 }
 
 footer .social-icons {

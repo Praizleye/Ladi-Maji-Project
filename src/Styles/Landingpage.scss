@@ -86,6 +86,17 @@ section.d-catch {
       color: white;
       font-size: 1.5rem;
     }
+   img.brand-logo{
+      position: absolute;
+      z-index: 1;
+      height: large;
+      width: large;
+      left:50%;
+      top: 10%;
+      transform: translate(-50%, -10%);
+      opacity: 0;
+
+    }
     div.care {
       position: absolute;
       left: 50%;
@@ -174,13 +185,12 @@ section.section-2 {
       position: absolute;
       top: -230px;
       left: -35px;
-      color: antiquewhite;
+     
     }
     .time {
       position: absolute;
       top: -160px;
-      left: -50px;
-      color: antiquewhite;
+      left: -52px;
       width: max-content;
     }
     .day {
@@ -192,7 +202,7 @@ section.section-2 {
     .date {
       position: absolute;
       top: -100px;
-      left: -25px;
+      left: -33px;
       font-size: 3.5rem;
     }
   }
@@ -219,18 +229,19 @@ section.section-3 {
 }
 
 section.section-4 {
-  // @extend section.section-1;
+  @include flexbox(column, center, center);
   border: 3px solid rgb(173, 114, 228);
   border-radius: 10px;
   width: 90%;
   margin: 6rem auto;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
   padding: 0.5rem;
-  //height: 400px;
   h4 {
-    border-bottom: 1px solid blueviolet;
     text-align: center;
+    line-height: 2rem;
     font-size: larger;
+    border-bottom: 1px solid blueviolet;
+    width: 100%;
   }
   div.testimoniesContainer {
     display: flex;
@@ -239,16 +250,12 @@ section.section-4 {
     margin: 2rem auto;
     border-radius: 10px;
     padding: 0.5rem;
-    //width: 500px;
-    //  height: 250px;
-    //border: 3px solid rgba(173, 114, 228,0.2);
     background-color: rgba(240, 248, 255, 0.795);
 
     .testimony-1 {
       width: 100%;
       .testimony-head {
         height: 30%;
-       // background: rgb(233, 238, 238);
         border-radius: 10px;
         position: relative;
         img {
@@ -263,7 +270,6 @@ section.section-4 {
           top: 30%;
           left: 30%;
           transform: translate(-30% -30%);
-          // color: white;
         }
       }
     }
@@ -337,6 +343,7 @@ footer {
        }
        .dev-content{
           margin-top: .8rem;
+          cursor: pointer;
        }
    }
 

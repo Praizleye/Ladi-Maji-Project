@@ -14,9 +14,14 @@
         font-size: 2rem !important;
         top: 15%;
     }
+    .brand-logo{
+        height: 200px !important;
+        width: 200px !important;
+        top: 20% !important;
+      }
     div.care{
         font-size: 3rem !important;
-        top: 50% !important;
+    top: 60% !important;
     }
    button{
        width: 14rem !important;
@@ -59,14 +64,14 @@
       }
       .day{
           top:-230px !important;
-          left: -25px !important;
+          left: -30px !important;
           font-size: 2rem !important;
     
       }
       .date{
          position: absolute;
           top:-170px !important;
-          left:-23px !important;
+          left:-33px !important;
           font-size: 3.5rem !important;
     }
    }
@@ -76,7 +81,7 @@ section.section-4{
    h4{
        font-size: 2rem !important;
        border-bottom: 2px solid blueviolet;
-       //padding-top: -2rem !important;
+     
    }
    .testimony-head{
        height: 50% !important;
