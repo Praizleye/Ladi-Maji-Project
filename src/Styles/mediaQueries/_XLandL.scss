@@ -35,7 +35,7 @@ section.d-catch{
     img{
         height: 100% !important;
        &:hover{
-           transform: scale(1.06 !important);
+           transform: scale(1.06) !important;
        }
      }
     .backgroundCover{
@@ -134,7 +134,7 @@ and (min-width: 550px) {
     img{
         height: 100% !important;
        &:hover{
-           transform: scale(1.06 !important);
+           transform: scale(1.06) !important;
        }
      }
     .backgroundCover{

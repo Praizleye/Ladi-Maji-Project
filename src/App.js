@@ -1,5 +1,7 @@
-// the query selectors
+//importing images
+//   import styles from "./template.css";
 
+// the query selectors
 const burger = document.querySelector("div.burger");
 const burgerOpen= document.querySelector("i.burger-open");
 const burgerClosed = document.querySelector(".burger-close");
