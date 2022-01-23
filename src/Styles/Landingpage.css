@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-body, html {
+body {
   font-family: "Poppins" , sans-serif;
   color: blueviolet;
   width: 100%;
@@ -140,6 +140,10 @@ section.section-4 div.next2 svg {
     height: 130%;
     width: 230%;
     top: 250%;
+  }
+  img.brand-logo {
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -720,7 +724,7 @@ section.section-2 .eventContent .month {
 
 section.section-2 .eventContent .time {
   position: absolute;
-  top: -160px;
+  top: -155.5px;
   left: -52px;
   width: -webkit-max-content;
   width: -moz-max-content;
