@@ -118,6 +118,85 @@ section.section-4 div.next2 svg {
   font-size: 3rem;
 }
 
+.partnerClick {
+  border: 1px solid whitesmoke;
+  background-color: royalblue;
+  margin: 10px auto;
+  border-radius: 10px;
+  position: absolute;
+  scroll-behavior: none;
+  top: 85%;
+  left: 10%;
+  width: 80%;
+  z-index: 10;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.partnerClick .partnerLegend {
+  color: white;
+  text-align: center;
+  margin: 10px 1rem;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.partnerClick .closePartner {
+  color: white;
+  position: absolute;
+  left: 93%;
+  top: -18px;
+}
+
+.partnerClick .closePartner svg {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}
+
+.partnerClick .closePartner svg:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.partnerClick input {
+  display: block;
+  margin: 2rem auto;
+  width: 70%;
+  height: 2rem;
+  border-radius: 10px;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.partnerClick button.submit4Partner {
+  width: 5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px 35%;
+  outline: none;
+  border: none;
+}
+
+.partnerClick button.submit4Partner:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  color: white;
+  background-color: royalblue;
+  border: 1px solid white;
+}
+
 @media only screen and (max-width: 390px) {
   section.d-catch span.catchy-text {
     font-size: 1.2rem !important;
@@ -174,14 +253,14 @@ section.section-4 div.next2 svg {
     font-size: 3rem !important;
     top: 60% !important;
   }
-  section.d-catch button {
+  section.d-catch button.Partner-Us {
     width: 14rem !important;
     height: 6rem !important;
   }
-  section.d-catch button svg {
+  section.d-catch button.Partner-Us svg {
     font-size: 2rem !important;
   }
-  section.d-catch button .partner-text {
+  section.d-catch button.Partner-Us .partner-text {
     font-size: 2.5rem !important;
   }
   .Vision-Mission, .section-2, .historyPane {
@@ -465,6 +544,185 @@ section.section-4 div.next2 svg {
   }
 }
 
+main.About {
+  padding: 0rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+main.About h1 {
+  margin-top: 1.5rem;
+}
+
+main.About div.founderPane {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+main.About div.founderPane img {
+  height: 80px;
+  width: 80px;
+}
+
+main.About div.founderPane .founderName {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5rem;
+}
+
+main.About div.founderPane .founderBio {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+}
+
+main.About div.Lmf-Team-Pane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main.About div.Lmf-Team-Pane img {
+  height: 60px;
+  width: 60px;
+  margin: .5rem auto;
+}
+
+main.About div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.About div.button button {
+  width: 9rem;
+  height: 4rem;
+  border-radius: 15px;
+  background-color: #6666ff;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+main.Contact {
+  padding: 0rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+main.Contact #map img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+main.Contact div.socialmediaPane {
+  margin-top: 1.5rem;
+}
+
+main.Contact div.socialmediaPane div .socioIcons {
+  font-size: 2.5rem;
+}
+
+main.Contact div.socialmediaPane div .socioIcons svg {
+  cursor: pointer;
+}
+
+main.Contact div.socialmediaPane div .socioIcons svg:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+main.Contact div.sponsorship_donationsPane {
+  margin: 1.5rem 0px;
+}
+
+main.Contact div.sponsorship_donationsPane div .acctNum {
+  opacity: .9;
+}
+
+main.Partner {
+  margin-top: 2rem;
+}
+
+main.Partner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 80%;
+}
+
+main.Partner div {
+  margin: 1.5rem 1rem;
+}
+
+main.Partner div.partnerNav {
+  border: 1px solid whitesmoke;
+  background-color: royalblue;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+main.Partner div.partnerNav input {
+  display: block;
+  margin: 2rem auto;
+  width: 70%;
+  height: 2rem;
+  border-radius: 10px;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+main.Partner div.partnerNav button.submit4rmNav {
+  width: 5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px 35%;
+  outline: none;
+  border: none;
+}
+
+main.Partner div.partnerNav button.submit4rmNav:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  color: white;
+  background-color: royalblue;
+  border: 1px solid white;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,8 +768,8 @@ nav ul.nav-items {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -652,6 +910,7 @@ section.section-1, section.section-3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  pointer-events: none;
 }
 
 section.section-1 .Vision-Mission, section.section-3 .Vision-Mission {

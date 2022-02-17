@@ -8,6 +8,9 @@ const burgerClosed = document.querySelector(".burger-close");
 const nav = document.querySelector("ul.nav-items"); 
 const getBound = document.querySelector("body");
 const circleContainer = document.querySelector("div.circle-theory");
+const getPartnerBtn = document.querySelector("button.Partner-Us");
+const getPartnerClick = document.querySelector("div.partnerClick");
+const close = document.querySelector("div.closePartner");
 const month = document.querySelector("div.month");
 const time = document.querySelector("div.time");
 const day = document.querySelector("div.day");
@@ -21,27 +24,31 @@ const tImg = document.querySelector(".tImg");
 const tName = document.querySelector(".testifiers-name");
 const tText = document.querySelector(".testimony-text");
 
+
+
 //Event listeners
 burger.addEventListener("click", toggleMenu);
-window.addEventListener("scroll", getDeviceHeight)
+window.addEventListener("scroll", getDeviceHeight);
 nxtBtn1.addEventListener("click", nxtBtn1Clicked);
 prevBtn1.addEventListener("click", prevBtn1Clicked);
 nxtBtn2.addEventListener("click", nxtBtn2Clicked);
 prevBtn2.addEventListener("click", prevBtn2Clicked);
+getPartnerBtn.addEventListener("click", partnerClicked);
+close.addEventListener("click", closed);
 
 
 // This function basically toggles the hamburger menu
 function toggleMenu(e){
    const burgerElement = burger.firstElementChild;
-if(burgerElement.classList.contains("fa-hamburger")){
-burgerElement.classList.remove("fa-hamburger");
-burgerElement.classList.add("fa-times");
+if(burgerElement.classList.contains("fa-burger")){
+burgerElement.classList.remove("fa-burger");
+burgerElement.classList.add("fa-xmark");
 nav.classList.add("nav-toggled");
 navtimeline();
 }
 else{
-   burgerElement.classList.remove("fa-times");
-   burgerElement.classList.add("fa-hamburger");
+   burgerElement.classList.remove("fa-xmark");
+   burgerElement.classList.add("fa-burger");
    nav.classList.remove("nav-toggled");
 }
 
@@ -79,6 +86,18 @@ tl2.from(".Partner-Us", {opacity: 0, x: -10},"-=1");
 tl2.to("img.brand-logo", {opacity:1})
 
 
+//the partner us logic
+function partnerClicked(){
+     var tlPartner =gsap.timeline({ease:"elastic.out(1, 0.3)"});
+     tlPartner.to("div.partnerClick",{scale:1, });
+     tlPartner.to("main.Home",{opacity:.5, });
+
+}
+function closed(){
+   var tlPartner =gsap.timeline({ease:"elastic.out(1, 0.3)"});
+   tlPartner.to("div.partnerClick",{scale:0, });
+   tlPartner.to("main.Home",{opacity:1, });
+}
 
 const upcomingEvents = [
    {
@@ -293,3 +312,5 @@ tlfooter.to("#lmfMail",{rotateX: 20});
 tlfooter.to("#locationAddress",{rotateX: 10});
 tlfooter.to("#timeOpen",{rotateX: 20});
 tlfooter.to("#submitFeedback",{rotateX: 40});
+
+

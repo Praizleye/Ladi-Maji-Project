@@ -1,9 +1,12 @@
 @import "./config";
 @import "./scriptclass";
+@import "./partnerClick";
 @import "./mediaQueries/Xsmall";
 @import "./mediaQueries/Medium";
 @import "./mediaQueries/XLandL";
-
+@import "./About";
+@import "./Contact";
+@import "./Partner";
 nav {
   @include flexbox(row, space-around, center);
   min-height: 10vh;
@@ -27,7 +30,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: transform 0.5s ease;
     li {
       list-style: none;
@@ -137,7 +140,7 @@ section.d-catch {
 section.section-1 {
   @include flexbox(column, center, center);
   width: 100%;
-
+   pointer-events: none;
   .Vision-Mission {
     border: 3px solid rgb(173, 114, 228);
     border-radius: 10px;

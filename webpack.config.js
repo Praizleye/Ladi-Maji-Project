@@ -12,6 +12,7 @@ module.exports = {
   entry: [
     './src/App.js',
     './src/Styles/Landingpage.css',
+    './src/Styles/About.css',
     //'./src/Assets',
 
 ],
@@ -64,11 +65,20 @@ module.exports = {
   
   plugins: [
       new HtmlWebpackPlugin({
-        template: './template.html'
+        template: './template.html',
+      }),
+      new HtmlWebpackPlugin({ 
+        filename: "About.html",
+        template: './src/About.html',
+        chunks: [],
       }),
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css",
       }),
+      // new MiniCssExtractPlugin({
+      //   filename: "[name].[contenthash].css",
+      //   template: './src/About.css'
+      // }),
     ],
 
     //loaders
@@ -101,12 +111,25 @@ module.exports = {
         },
         {
           test: /\.html$/i,
-          loader: "html-loader",
+          loader: 'html-loader',
         },
+        // {
+        //   test: /\.html$/,
+        //   type: "asset/resource",
+        //   generator: {
+        //     filename: "[name][ext]",
+        //   },
+        // },
+        // {
+        //   test: /\.html$/i,
+        //   use: ["extract-loader", "html-loader"],
+        // },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
-        
+          generator: {
+              filename: "[name][ext]",
+            },
         },
       ],
     },

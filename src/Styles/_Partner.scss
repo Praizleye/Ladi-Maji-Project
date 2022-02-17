@@ -1,0 +1,45 @@
+main.Partner{
+    margin-top: 2rem;
+img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 80%;
+}
+
+div{
+    margin: 1.5rem 1rem;
+}
+div.partnerNav{
+    border: 1px solid whitesmoke;
+    background-color: royalblue;
+    margin: 10px auto;
+    border-radius: 10px;
+input{
+    display: block;
+        margin: 2rem auto;
+        width: 70%;
+        height: 2rem;
+        border-radius: 10px;
+        padding-left: 8px;
+        outline: none;
+        border: none;
+       cursor: pointer;
+}
+button.submit4rmNav{
+    width: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+   border-radius: 8px;
+   margin: 5px 35%;
+   outline: none;
+   border: none;
+   &:hover{
+    transform: scale(.95);
+    color: white;
+    background-color: royalblue;
+    border: 1px solid white;
+}
+    }
+}
+}
