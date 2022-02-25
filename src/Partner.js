@@ -1,3 +1,5 @@
+
+
 const burger = document.querySelector("div.burger");
 const burgerOpen= document.querySelector("i.burger-open");
 const burgerClosed = document.querySelector(".burger-close");

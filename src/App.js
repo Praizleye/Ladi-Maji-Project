@@ -1,10 +1,8 @@
 //importing images
-//   import styles from "./template.css";
+ // import "./About.html";
 
 // the query selectors
 const burger = document.querySelector("div.burger");
-const burgerOpen= document.querySelector("i.burger-open");
-const burgerClosed = document.querySelector(".burger-close");
 const nav = document.querySelector("ul.nav-items"); 
 const getBound = document.querySelector("body");
 const circleContainer = document.querySelector("div.circle-theory");
